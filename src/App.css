@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* **************************************************************** */
+
+.ReactModal__Content {
+  outline: none;
+  padding: 20px;
+  overflow: auto;
+  background: rgb(255, 255, 255);
+}
+
+.ReactModal__Body--open .content-container {
+  display: none;
+}
+
+@media (min-width: 601px) {
+  .ReactModal__Overlay {
+    position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.74902);
+  }
+
+  .ReactModal__Content {
+    position: absolute; top: 40px; left: 40px; right: 40px; bottom: 40px; border: 1px solid rgb(204, 204, 204); border-radius: 4px;
+  }
+
+  .ReactModal__Body--open .content-container {
+    display: block;
+  }
+}
